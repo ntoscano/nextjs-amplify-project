@@ -7,9 +7,9 @@ frontend:
     build:
       commands:
         - echo "Building Next.js app as static export"
-        - npm run build
+        - npm run static-export
   artifacts:
-    baseDirectory: out
+    baseDirectory: out-static
     files:
       - '**/*'
   cache:

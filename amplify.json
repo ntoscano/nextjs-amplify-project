@@ -1,0 +1,8 @@
+{
+  "hosting": {
+    "type": "BASIC",
+    "options": {
+      "staticHosting": true
+    }
+  }
+} 

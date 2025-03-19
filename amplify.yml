@@ -1,0 +1,19 @@
+version: 1
+applications:
+  - frontend:
+      phases:
+        preBuild:
+          commands:
+            - echo "Running custom build script"
+            - chmod +x ./build.sh
+        build:
+          commands:
+            - ./build.sh
+      artifacts:
+        baseDirectory: out-static
+        files:
+          - '**/*'
+      cache:
+        paths:
+          - node_modules/**/*
+    appRoot: . 
