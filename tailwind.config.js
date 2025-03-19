@@ -8,10 +8,5 @@ module.exports = {
   theme: {
     extend: {},
   },
-  // Ensure compatibility with Tailwind v4
-  future: {
-    // Enable all v4 features
-    hoverOnlyWhenSupported: true,
-  },
   plugins: [],
 } 
