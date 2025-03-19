@@ -1,6 +1,3 @@
-When updating your Pulumi configuration, replace the existing buildSpec with this one:
-
-buildSpec: `
 version: 1
 frontend:
   phases:
@@ -17,7 +14,4 @@ frontend:
       - '**/*'
   cache:
     paths:
-      - node_modules/**/*
-`,
-
-This configuration changes the build to use static site export, avoiding issues with the target property in SSR builds. 
+      - node_modules/**/* 

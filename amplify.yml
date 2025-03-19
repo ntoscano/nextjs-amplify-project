@@ -5,15 +5,12 @@ applications:
         preBuild:
           commands:
             - npm ci
-            - echo "Adding explicit NODE_OPTIONS to avoid SSR issues"
-            - export NODE_OPTIONS="--max-old-space-size=4096"
         build:
           commands:
-            - echo "Building Next.js app"
+            - echo "Building Next.js app as static export"
             - npm run build
-            - echo "Next.js build completed"
       artifacts:
-        baseDirectory: .next
+        baseDirectory: out
         files:
           - '**/*'
       cache:

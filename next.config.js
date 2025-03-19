@@ -1,13 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
+  output: 'export',
   distDir: '.next',
-  // Explicitly setting important flags to prevent any auto-configuration by Amplify
-  experimental: {
-    serverActions: true,
-  },
-  // Disable generating etags for pages
+  // Remove the experimental settings causing issues
   generateEtags: false,
+  trailingSlash: true,
+  images: {
+    unoptimized: true,
+  }
 };
 
 module.exports = nextConfig; 
