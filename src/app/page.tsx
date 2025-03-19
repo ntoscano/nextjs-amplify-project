@@ -17,7 +17,7 @@ export default function Home() {
             Hey Cesar, I think I got deployments working.
           </li>
           <li className="tracking-[-.01em]">
-            I'll reach out once I have things cleaned up and working with playground
+            I&apos;ll reach out once I have things cleaned up and working with playground
           </li>
         </ol>
 
