@@ -14,7 +14,7 @@ export default function Home() {
         />
         <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2 tracking-[-.01em]">
-            Hey Cesar, I think I got deployments working.24
+            Hey Cesar, I think I got deployments working.244
           </li>
           <li className="tracking-[-.01em]">
             I&apos;ll reach out once I have things cleaned up and working with playground
